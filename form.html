@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption Form</title>
+
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+    <div>
+        <form action="./index.html">
+            <h1>Adoption Form</h1>
+            <label for="FN" >First Name:-</label>
+            <span id="efirst"></span>
+            <input type="text" id="FN" class="Input" placeholder="Enter First Name"  >
+            <br>
+    
+            <label for="LN" >Last Name:-</label>
+            <span id="elast"></span>
+            <input type="text" id="LN" class="Input" placeholder="Enter Last Name"  >
+            <br>
+    
+            <label for="EM" >Email:-</label>
+            <span id="eemail"></span>
+            <input type="email" id="EM" class="Input" placeholder="Enter Email"  >
+            <br>
+    
+            <label for="N" >Contact No:-</label>
+            <span id="enumber"></span>
+            <input type="number" id="N" class="Input" placeholder="Enter Phone Number"  >
+            <br>
+    
+            <label for="Gender">Gender:-</label><br>
+            <!-- If we dont want to select multiple values use "name" -->
+            <input type="radio" style="gap: 0.5rem;" value="Male" name="Gender"/>Male
+            <input type="radio" style="gap: 0.5rem;" value="Female" name="Gender"/>Female
+            <input type="radio" style="gap: 0.5rem;" value="Other" name="Gender"/>Others
+            <br>
+    
+    
+            <label for="State">State:-</label>
+            <select name="" id="State" required >
+                <option value="" hidden>--Select--</option>
+                <option value="">Maharashtra</option>
+                <option value="">Gujrat</option>
+                <option value="">Rajstan</option>
+                <option value="">UP</option>
+                <option value="">UK</option>
+            </select>
+            <br>
+            
+            
+            <!-- we use " " keyword to mandotrily fill the column -->
+            <input type="checkbox" required >I read and understand Terms & Condition
+            <br>
+            <input type="checkbox" required >I am 18 years old
+            <br>
+
+            <button>Submit</button>
+            <button id="ca">Cancel</button>
+            <br>
+    </div>
+    <script src="./form.js"></script>
+</body>
+</html>

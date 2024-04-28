@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#all{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    /* vh-------view port height */
+    background-color: beige;
+    object-fit: cover;
+    
+}
+form{
+    background-color: rgba(0, 0, 0, 0.182);
+    border-radius: 5px;
+    background-image: url(./images/Cat\ life\ is\ better.webp);
+    padding: 30px;
+    color: black;
+    width: 80%;
+    height: 100vh;
+    overflow: hidden;
+}
+#image{
+    position: relative;
+}
+@keyframes bounce {
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    
+}
+#image h1{
+    position: absolute;
+    top: 10%;
+    color: beige;
+    right: 50%;
+    animation: bounce 2s infinite;
+    text-shadow: 1rem 1rem 1rem rgb(136, 156, 7);
+    margin-left: 2rem;
+}
+#image label{
+    color: gold;
+}
+h1{
+    text-shadow: 10px 10px 10px black;
+}
+input,button,select{
+    margin-top: 7px;
+    border-radius: 1rem 0.5rem;
+    box-shadow: 0.3rem 0.3rem 0.3rem black;
+    margin: 0.4rem;
+    background-color: black;
+    color:grey;
+}
+.Input{
+    width: 100%;
+    height: 20px;
+    border-radius: 1rem 0.5rem;
+}
+img{
+    height: 100vh;
+    
+}
+
+button{
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem 1rem;
+    box-shadow: 10px 10px 10px black;
+    background-color: green;
+    color: white;
+}
+option{
+    background-color: black;
+    color: red;
+}
+span{
+    color: red;
+    font-size: 0.6rem;
+}
+

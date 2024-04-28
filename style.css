@@ -1,0 +1,265 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden !important;
+  width: 100%;
+}
+
+#wholeContent #navbar {
+  /* background-color: transparent; */
+  background-color: black;
+  /* color: white; */
+  width: 100%;
+}
+
+#navbar a {
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+#wholeContent #navbar :hover {
+  /* background-color: white; */
+  color: black;
+}
+#wholeContent #navbar :hover i {
+  /* background-color: white; */
+  color: white;
+}
+
+/* #wholeContent #navbar:hover a {
+  color: black; 
+  
+} */
+
+#wholeContent #navbar #navbarContent {
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  position: fixed;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+#navbar #navbarContent a:hover{
+  color: red;
+}
+
+
+
+#wholeContent #navbar #navbarContent div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3rem;
+}
+
+#wholeContent #navbar #navbarContent img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  /* transition: 180s;
+    transform: rotate(3600deg); */
+
+}
+
+#wholeContent #navbar #navbarContent img:hover {
+  transition: 180s;
+  transform: rotate(3600deg);
+}
+
+.carousel-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-container i {
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  z-index: 2;
+}
+
+.carousel-container img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+#dogSection {
+  background-color: beige;
+  align-items: center;
+}
+
+#dogSection h1 {
+  text-align: center;
+  margin: 0%;
+  font-size: 4rem;
+  text-shadow: 1rem 1rem 1rem black;
+}
+
+#dog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+#dog div {
+  width: 50%;
+
+}
+
+#dog img {
+  border-radius: 50%;
+  box-shadow: 1rem 1rem 1rem black;
+  margin: 10rem;
+
+}
+
+#dog p {
+  font-size: large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-shadow: 0.5rem 0.5rem 0.5rem black;
+  align-items: center;
+
+}
+
+#dog button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: black;
+  color: red;
+}
+
+/* ============================================= */
+
+@media (max-width:768px){
+ 
+  #wholeContent #navbar #navbarContent {
+    justify-content: center;
+  }
+
+  #wholeContent #navbar #navbarContent div {
+    justify-content: start;
+    /* today edited justify-content */
+    gap: 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  #wholeContent #navbar #navbarContent img {
+    width: 1rem;
+    height: 1rem;
+    margin: 0.5rem;
+  }
+  #right i{
+    font-size: 0.3rem;
+  }
+  
+  .carousel-container img {
+    height: 30vh;
+  }
+  
+  #dogSection h1 {
+    font-size: 1rem;
+  }
+  
+  #dog {
+    justify-content: start;
+    flex-direction: column;
+    height: 50vh;
+  }
+  
+  #dog div {
+    width: 50%;
+  }
+  
+  #dog img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0.1rem 0.1rem 0.1rem black;
+    margin: 0;
+  }
+  #dogContent{
+    display: flex;
+    flex-direction: column;
+  }
+  #dog p {
+    font-size: small;
+    text-shadow: 0rem 0rem 0rem black;
+  
+  }
+  #dog button {
+    padding: 0.1rem;
+    border-radius: 0.5rem;
+    background-color: black;
+    color: red;
+  }
+}
+
+/* ============================================ */
+@media (min-width: 769px) and (max-width: 1024px){
+  #wholeContent #navbar #navbarContent {
+    justify-content: space-around;
+  }
+
+  #wholeContent #navbar #navbarContent div {
+    justify-content: start;
+    /* today edited justify-content */
+    gap: 1rem;
+    font-size: 1.5rem;
+  }
+
+  #wholeContent #navbar #navbarContent img {
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+  }
+  #right i{
+    font-size: 0.5rem;
+  }
+  
+  .carousel-container img {
+    height: 40vh;
+  }
+  
+  #dogSection h1 {
+   
+    font-size: 3rem;
+  }
+  
+  #dog {
+    justify-content: start;
+    flex-direction: column;
+    height: 55vh;
+  }
+  
+  #dog div {
+    width: 50%;
+  }
+  
+  #dog img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0.5rem 0.5rem 0.5rem black;
+    margin: 0;
+  }
+  #dogContent{
+    display: flex;
+    flex-direction: column;
+  }
+  #dog p {
+    font-size: large;
+    text-shadow: 0rem 0rem 0rem black;
+  }
+  #dog button {
+    padding: 0.35rem;
+    border-radius: 0.5rem;
+    background-color: black;
+    color: red;
+  }
+}

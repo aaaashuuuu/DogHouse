@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+#footer{
+    border-top: 1rem solid white;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: black;
+    color: white;
+    gap: 1rem;
+
+}
+#footer a{
+text-decoration: none;
+color: white;
+}
+#footer div{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+#socialacc{
+    flex-direction: row;
+}
+#socialacc div{
+    display: flex;
+    flex-direction: row;
+}
+#footer p{
+    margin: 0; 
+}
+@media( max-width: 768px){
+    #footer{
+        padding: 1.5rem;
+       font-size: 0.5rem;
+        gap: 1rem;
+    
+    }
+}
+@media ( min-width: 769px) and (max-width: 1024px){
+    #footer{
+        padding: 2rem;
+       font-size: 1rem;
+        gap: 1rem;
+    
+    }
+}

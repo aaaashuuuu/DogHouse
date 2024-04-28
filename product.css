@@ -1,0 +1,272 @@
+body{
+  margin: 0;
+  padding: 0;
+}#right{
+    position: relative;
+  }
+  
+  main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.5rem;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    margin-top: 0.5rem;
+    
+  }
+  
+  main div img{
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  main div h3{
+    text-align: center;
+  }
+  
+  
+  main div div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+  
+  
+  main div button{
+    width: 100%;
+    height: 3rem;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 5px;
+  }
+  
+  #popup{
+    width: 25%;
+    position: fixed;
+    top: 0%;
+    right: -100%;
+    padding: 1rem;
+    background-image: url(./images/Cart\ Image.avif);
+    height: 95vh;
+    overflow-y: auto;
+    border: 3px solid black;
+    border-radius: 0.5rem;
+    z-index: 3;
+    /* background-image:  linear-gradient(black,red,yellow,white); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: wheat;
+    text-shadow: 10px 10px 7px white;
+  }
+  
+  #popup #static div{
+    display: flex;
+    justify-content: right;
+    font-size: 1.5rem;
+    color: rgba(255, 0, 0, 0.6);
+    
+  }
+  .fa-solid.fa-circle-xmark{
+    text-shadow: 0px 0px 0px black;
+  }
+  
+  #popup #static h2{
+    text-align: center;
+  }
+  
+  #dynamic{
+    /* border-bottom: 2px solid black;
+    border-top: 2px solid black; */
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    width: 100%;
+  
+  }
+ 
+  .cont{
+    border-bottom: 2px solid black;
+    padding-top: 1rem;
+  }
+  #dynamic .cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.33%;
+    
+  }
+  
+  #dynamic .cont img{
+    width: 5rem;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  #dynamic .cont h4{
+    margin: 0rem;
+    text-align: center;
+   
+  }
+  
+  #dynamic .cont p{
+    color: beige;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  #dynamic .cont input{
+    border-radius: 3px;
+    margin: 1rem 2rem 1rem 3rem;
+    padding-left: 1rem;
+    width: 4rem;
+  }
+  
+  #dynamic .cont #span{
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+  }
+  
+  #payments p{
+    text-align: center;
+    margin: 2rem;
+  }
+  
+  #payments button{
+    width: 100%;
+    height: 2rem;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px; 
+  }   
+/* ============================== */
+
+
+  @media (max-width:768px){
+    main{
+      grid-gap: 0.5rem; 
+      grid-template-columns: repeat(2,1fr);
+      font-size: 1rem;
+    }
+    
+    main div h3{
+      text-align: center;
+      font-size: 0.5rem;
+    }
+    main div div span{
+      font-size: 0.5rem;
+    }
+    
+    main div button{
+      width: 100%;
+      height: 2rem;
+      border: none;
+      background-color: black;
+      color: white;
+      font-size: 1.5rem;
+      border-radius: 5px;
+    }
+    .fa-solid.fa-cart-arrow-down.fa-fade{
+      font-size: 1.2rem;
+    }
+
+    #popup{
+      width: 50%;
+    }
+    
+    #popup #static div{
+      font-size: 1rem;
+ 
+    }
+    .fa-solid.fa-circle-xmark{
+      text-shadow: 0px 0px 0px black;
+    }
+    
+    #popup #static h2{
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    #dynamic{
+      padding-bottom: 0.2rem;
+      padding-top: 0.2rem;
+      width: 100%;
+    
+    }
+   
+    .cont{
+      border-bottom: 2px solid black;
+      padding-top: 0.5rem;
+    }
+    #dynamic .cont{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 3.33%;
+      
+    }
+    
+    #dynamic .cont img{
+      width: 3rem;
+      height: auto;
+      object-fit: cover;
+    }
+    
+    #dynamic .cont h4{
+      margin: 0rem;
+      text-align: center;
+     font-size: 0.7rem;
+    }
+    
+    #dynamic .cont p{
+      color: beige;
+      font-weight: 900;
+      text-align: center;
+      margin-bottom: 0.5rem;
+      font-size: 0.7rem;
+    }
+    
+    #dynamic .cont input{
+      border-radius: 3px;
+      margin: 1rem 2rem 1rem 2rem;
+      width: 2rem;
+    }
+    
+    #dynamic .cont #span{
+      gap: 0.5rem;
+      font-size: 0.7rem;
+    }
+    
+    #payments p{
+      text-align: center;
+      margin: 1rem;
+      font-size: 0.7rem;
+    }
+    
+    #payments button{
+      width: 100%;
+      height: 1.5rem;
+      border: none;
+      background-color: black;
+      color: white;
+      font-size: 0.7rem;
+      border-radius: 5px; 
+    }
+  }
+  @media (min-width:769px){
+    main div h3{
+      text-align: center;
+      font-size: 0.75rem;
+    }
+  }
+  @media (min-width:1200px){
+    main div h3{
+      text-align: center;
+      font-size: 1rem;
+    }
+  }

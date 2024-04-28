@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="./SignUp.css">
+    <!-- link favicon -->
+    <link rel="shortcut icon" href="./Images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <div id="all">
+        <div id="image">
+            <img src="./images/dog main.jpg" alt="">
+            <h1>Hello,Welcome to <label for="">Dog House</label> Please Register for our service....</h1>
+        </div>
+            <form action="./Login.html">
+                <h1>Sign Up</h1>
+                <label for="FN" >First Name:-</label>
+                <span id="efirst"></span>
+                <input type="text" id="FN" class="Input" placeholder="Enter First Name"  >
+                <br>
+        
+                <label for="LN" >Last Name:-</label>
+                <span id="elast"></span>
+                <input type="text" id="LN" class="Input" placeholder="Enter Last Name"  >
+                <br>
+        
+                <label for="EM" >Email:-</label>
+                <span id="eemail"></span>
+                <input type="email" id="EM" class="Input" placeholder="Enter Email" required >
+                <br>
+        
+                <label for="N" >Contact No:-</label>
+                <span id="enumber"></span>
+                <input type="number" id="N" class="Input" placeholder="Enter Phone Number"  >
+                <br>
+        
+                <label for="Gender">Gender:-</label><br>
+                <!-- If we dont want to select multiple values use "name" -->
+                <input type="radio" style="gap: 0.5rem;" value="Male" name="Gender"/>Male
+                <input type="radio" style="gap: 0.5rem;" value="Female" name="Gender"/>Female
+                <input type="radio" style="gap: 0.5rem;" value="Other" name="Gender"/>Others
+                <br>
+        
+                <label for="DOB" id="edob">Date of Birth:-</label>
+                <input type="date" id="DOB" required >
+                <br>
+        
+                <label for="State">State:-</label>
+                <select name="" id="State" required >
+                    <option value="" hidden>--Select--</option>
+                    <option value="">Maharashtra</option>
+                    <option value="">Gujrat</option>
+                    <option value="">Rajstan</option>
+                    <option value="">UP</option>
+                    <option value="">UK</option>
+                </select>
+                <br>
+                
+                <label for="Pass" >Create Password:-</label>
+                <span id="epass"></span>
+                <input type="password" id="Pass" class="Input"  > 
+                <br>
+        
+                <label for="Cpass" >Confirm Password:-</label>
+                <span id="ecpass"></span>
+                <input type="password"id="Cpass" class="Input"  >  
+                <br>
+                
+                <!-- we use " " keyword to mandotrily fill the column -->
+                <input type="checkbox" required >I read and understand Terms & Condition
+                <br>
+                <input type="checkbox" required >I am 18 years old
+                <br>
+
+                <button>Submit</button>
+                <button id="ca">Cancel</button>
+                <br>
+                
+    </div>
+    </form>
+    
+    <script src="./SignUp.js"></script>
+</body>
+</html>

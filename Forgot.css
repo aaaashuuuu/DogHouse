@@ -1,0 +1,49 @@
+body{
+    margin: 0rem;
+    padding: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(./images/Adoption.avif);
+    font-family: 'Comic Neue', cursive;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    background-image: linear-gradient(black,white);
+    width: 40%;
+    height: 40vh;
+    border-radius: 1rem;
+}
+
+div label{
+    color: white;
+}
+
+div input{
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+div span{
+    color: black;
+}
+
+div button{
+    border-radius: 0.5rem;
+    background-image: linear-gradient(red,gold,yellow);
+    padding: 1rem;
+    border : 2px solid white;
+    color: black;
+}
+
+div a{
+    color: black;
+}
